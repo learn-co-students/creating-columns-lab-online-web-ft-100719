@@ -10,10 +10,13 @@ body, html {
 
 .container, h1 {
   width: 80%;
+  display: grid;
   max-width: 600px;
   min-width: 400px;
   padding: 10px;
   margin: 10px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
 h4 {
@@ -46,6 +49,19 @@ img:hover {
   background-color: #dd4444;
 }
 
-/* create a column class! make sure all of the divs within 'container's have a class of 'column' */
+.small {
+  width: 100%;
+}
 
+/* create a column class! make sure all of the divs within 'container's have a class of 'column' */
+.container img.medium{
+  grid-column: 2/4;
+  grid-row: 1/4;
+  width: 100%;
+}
 /* create your tile classes! we recommend .small .med .large */
+
+.large{
+
+
+}
